@@ -31,11 +31,11 @@ public class Proxy implements IService {
   
   public String runSomething() {
     System.out.println("Before Somthing ...");
-    
     service = new Service();
-    return service.runSomething();
-    
+    String result = service.runSomething();
     System.out.println("After Somthing ...");
+    
+    return result;
   }
 }
 
